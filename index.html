@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Stopwatch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?      family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+</head> 
+  <body>
+    <div class="container">
+      <h1>Stopwatch.JS</h1>
+      <div class="timer">
+        <div class="time" id="minutes">00</div>
+        <div class="separator">:</div>
+        <div class="time" id="seconds">00</div>
+        <div class="separator">:</div>
+        <div class="time" id="milliseconds">000</div>
+      </div>
+        <div class="buttons">
+        <button class="btn" id="startBtn" onClick=startTime()>Iniciar</button>
+        <button class="btn" id="pauseBtn" onClick=pauseTime()>Pausar</button>
+        <button class="btn" id="resumeBtn" onClick=resumeTime()>Continuar</button>
+        <button class="btn" id="restartBtn" onClick=resetTime()>Restart</button>
+      </div>
+    </div>
+  </body>
+</html>
